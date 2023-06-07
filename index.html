@@ -1,10 +1,52 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="container-xl">
+      <header class="navbar py-xl-5 py-7 border-bottom">
+        <h3 class="mb-0">
+          <a class="d-block" href="index.html">
+            <img class="logo" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" alt="AI">
+          </a>
+        </h3>
+        <button type="button" class="navbar-toggler text-bk-0 d-md-none" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">
+            menu
+          </span>
+        </button>
+        <div class="d-none d-md-block">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-bold">首頁</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a href="price.html" class="nav-link fw-bold">定價</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse w-100 bg-bk-100 custom-collapse position-absolute" id="navbarToggler">
+          <div class="d-flex justify-content-center align-items-center custom-collapse-menu">
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="fs-3 fw-bolder">首頁</a></li>
+              <li><a href="price.html" class="fs-3 fw-bolder">定價</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    
 <div class="container-xl">
   <section class="mb-xl-14 mb-13">
     <h1 class="mb-0 slogan py-9 fw-bolder">
@@ -559,3 +601,46 @@ current: index
 </div>
 
 
+
+
+    <div class="container-xl">
+      <footer>
+        <div class="d-flex flex-column-reverse flex-xl-row justify-content-between align-items-start py-11 border-top border-bottom border-bk-0">
+          <div>
+            <a class="d-block fs-3 fw-bolder mb-2" href="index.html">首頁</a>
+            <a class="d-block fs-3 fw-bolder" href="index.html">定價</a>
+          </div>
+          <h3 class="mb-xl-0 mb-9">
+            <a class="d-block" href="index.html">
+              <img class="logo"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" alt="AI">
+            </a>
+          </h3>
+        </div>
+        <div class="d-flex justify-content-between align-items-xl-center align-items-start py-xl-8 py-5">
+          <div class="d-flex flex-column flex-xl-row align-items-xl-center align-items-start">
+            <p class="mb-xl-0 mb-3 py-xl-0 py-3 me-12">AI工具王 © 2023</p>
+            <ul class="list-unstyled d-flex align-items-center py-3 py-xl-0 mb-0">
+              <li class="me-5"><a href="#">Facebook</a></li>
+              <li class="me-5"><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <a class="d-flex align-items-center py-3 py-xl-0" href="#">
+            <p class="text-nowrap me-3 mb-0">Back to top</p>
+            <span class="material-icons fs-10">
+              arrow_upward
+            </span>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
