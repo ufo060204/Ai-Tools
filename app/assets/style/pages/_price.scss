@@ -1,0 +1,88 @@
+.trust-title {
+  font-size: 120px;
+  @include mobile {
+    font-size: 48px;
+  }
+}
+.trust-content {
+  font-size: 48px;
+  margin-bottom: 238px;
+  @include mobile {
+    font-size: 28px;
+    margin-bottom: 258px;
+  }
+}
+.price-card-ul {
+  list-style: disc;
+  margin-bottom: 136px;
+}
+.price-card {
+  border: 1px solid #525252;
+  &:hover {
+    border: 1px solid #FFFFFF;
+  }
+}
+.price-dropdown-toggle::after {
+  font-family: "Material Icons" ;
+  content: "tune" ;
+  border: 0 ;
+  vertical-align: 0 ;
+  margin-left: 12px ;
+}
+.rule-title {
+  font-size: 32px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+.rule-list-title {
+  font-size: 48px;
+  @include mobile {
+    font-size: 32px;
+  }
+}
+.rule-list-content {
+  font-size: 32px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+.accordion-title {
+  font-size: 32px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+.accordion-item {
+  border-radius: 16px;
+  &:not(:first-of-type) {
+    border-top: 1px solid #525252;
+  }
+  &:hover {
+    border: 1px solid #FFFFFF;
+  }
+}
+.accordion-button {
+  border-radius: 16px;
+}
+.accordion-body {
+  padding-top: 0;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.accordion-button::before {
+  font-size: 24px;
+  margin-right: 20px;
+  font-family: "Material Icons";
+  content: "add";
+}
+.accordion-button:not(.collapsed)::before {
+  content: "remove";
+}

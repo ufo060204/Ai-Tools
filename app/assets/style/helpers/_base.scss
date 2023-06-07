@@ -1,0 +1,17 @@
+/* 隱藏 x 軸 */
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+*partner {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+// 移除 button focus 狀態 box-shadow
+.btn:focus {
+  box-shadow: none !important;
+}
