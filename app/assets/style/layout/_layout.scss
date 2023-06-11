@@ -6,7 +6,8 @@
 }
 .custom-collapse {
   top: 93px;
+  z-index: 10;
 }
 .custom-collapse-menu {
-  min-height: calc(100vh - 93px);
+  min-height: calc(100vh - 243px);
 }
