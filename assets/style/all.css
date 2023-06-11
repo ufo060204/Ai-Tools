@@ -19,6 +19,11 @@
           box-shadow: none !important;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16197,10 +16202,11 @@ fieldset:disabled .btn {
 
 .custom-collapse {
   top: 93px;
+  z-index: 10;
 }
 
 .custom-collapse-menu {
-  min-height: calc(100vh - 93px);
+  min-height: calc(100vh - 243px);
 }
 
 .slogan {
@@ -16234,17 +16240,28 @@ fieldset:disabled .btn {
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  padding-bottom: 36px;
 }
 
 .swiper-slide {
   height: auto;
 }
 
+.swiper-pagination.swiper-pagination-bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+}
+
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  opacity: 1;
   background: #525252;
 }
 
@@ -16252,10 +16269,6 @@ fieldset:disabled .btn {
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-}
-
-.swiper-pagination {
-  position: static;
 }
 
 .comment-img {
@@ -16315,6 +16328,11 @@ fieldset:disabled .btn {
           transform: rotate(-180deg);
 }
 
+.btn-outline-bk-60.active {
+  font-weight: 700;
+  background: #f2f2f2;
+}
+
 .custom-pagination {
   color: #020202;
   border-radius: 16px;
@@ -16337,6 +16355,10 @@ fieldset:disabled .btn {
 .custom-pagination:hover {
   color: #FFFFFF;
   background: #020202;
+}
+
+.dropdown-item.active {
+  background-color: #e9ecef;
 }
 
 .dropdown-toggle-btn-shadow {
@@ -16375,13 +16397,13 @@ fieldset:disabled .btn {
   }
 }
 
-.ai-tool-img {
+.ai-tool-img img {
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.ai-tool-img:hover {
+.ai-tool-img:hover img {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
